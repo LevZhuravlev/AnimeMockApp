@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        view.backgroundColor = .purple 
         
         reportService.fetchReport(for: .anime) { report, err in
             print(report)
